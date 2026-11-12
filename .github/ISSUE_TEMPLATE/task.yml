@@ -1,0 +1,79 @@
+name: Task
+description: Planned, scoped implementation or documentation work.
+title: "[Task]: "
+labels: ["type:feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for planned work that is not a bug report or a feature request.
+        Keep one deliverable per issue. If the work cannot be completed in a few focused
+        days, split it. Change the default `type:feature` label if another type fits.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why does this work exist? Link the architecture, decision, or prior issue.
+      placeholder: The worker protocol defines snapshots, but there is no reconciliation loop yet.
+    validations:
+      required: true
+  - type: input
+    id: objective
+    attributes:
+      label: Objective
+      description: One sentence describing the outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What will be changed? Include commands, interfaces, data, and docs.
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What this issue deliberately does not do.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Observable behavior. Include failure paths and documentation.
+      placeholder: |
+        - [ ] A stale snapshot is rejected with a stable error.
+        - [ ] A repeated query does not mutate state.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Blocked by and blocks. Use issue links.
+      placeholder: |
+        - Blocked by: #12
+        - Blocks: #18
+    validations:
+      required: true
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: Technical notes
+      description: Constraints, decisions, traps, and links. Not a full implementation plan.
+    validations:
+      required: false
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation
+      description: Exact commands or manual checks that must pass.
+      placeholder: |
+        ```console
+        go test ./...
+        go vet ./...
+        ```
+    validations:
+      required: true

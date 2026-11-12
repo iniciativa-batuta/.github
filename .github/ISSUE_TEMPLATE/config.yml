@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/iniciativa-batuta/batuta-cli/tree/main/docs
+    about: Read the architecture, roadmap, examples, and issue breakdown before opening an issue.
+  - name: Security policy
+    url: https://github.com/iniciativa-batuta/.github/blob/main/SECURITY.md
+    about: Report vulnerabilities privately. Do not open a public security issue.
+  - name: Support
+    url: https://github.com/iniciativa-batuta/.github/blob/main/SUPPORT.md
+    about: How to ask for help and what information to include.

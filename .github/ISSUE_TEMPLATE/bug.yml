@@ -1,0 +1,64 @@
+name: Bug report
+description: Report incorrect behavior or a regression.
+title: "[Bug]: "
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report security vulnerabilities here. Follow the security policy instead.
+        Remove tokens, credentials, private paths, and personal data from logs.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the actual behavior and its impact.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest input and the exact commands.
+      placeholder: |
+        1. Start the server with ...
+        2. Run `batuta task apply -f task.yaml`
+        3. Observe ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Output of `batuta version`, or the commit hash.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, architecture, Go version, worker topology, and relevant configuration with secrets redacted.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and errors
+      description: Relevant output with secrets redacted. Use a code block.
+    validations:
+      required: false
+  - type: checkboxes
+    id: security
+    attributes:
+      label: Security check
+      options:
+        - label: This report does not contain a security vulnerability or exploit details.
+          required: true
+        - label: I removed tokens, credentials, and private data from the report.
+          required: true
