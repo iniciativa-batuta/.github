@@ -69,3 +69,8 @@ Labels are a classification system, not decoration. Use a small, consistent voca
 
 Do not add a new label for every nuance. Add a label only when it changes how work is
 triaged or filtered.
+
+GitHub creates default labels such as `bug` and `documentation` in new repositories. They
+are not part of this taxonomy and are not used by the templates. Remove unused defaults
+when it is safe to do so, or leave them dormant; do not duplicate their intent with new
+labels.

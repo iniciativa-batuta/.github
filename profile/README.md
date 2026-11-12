@@ -6,7 +6,8 @@
 
 [Repositório principal](https://github.com/iniciativa-batuta/batuta-cli) ·
 [Documentação](https://github.com/iniciativa-batuta/batuta-cli/tree/main/docs) ·
-[Roadmap](https://github.com/iniciativa-batuta/batuta-cli/blob/main/docs/ROADMAP.md)
+[Roadmap](https://github.com/iniciativa-batuta/batuta-cli/blob/main/docs/ROADMAP.md) ·
+[Issues](https://github.com/iniciativa-batuta/batuta-cli/issues)
 
 </div>
 
